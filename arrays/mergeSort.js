@@ -18,7 +18,7 @@ const merge = (leftArray, rightArray) => {
             result.push(rightArray.shift())
         }
     }
-    return [...result, ...leftArray, ...rightArray]
+    return [...result, ...leftArray, ...rightArray] // One of these arrays will be empty
 }
 
 console.log(mergeSort([3,23423,4,23123,5643563456,3,2,2,2,2]))
